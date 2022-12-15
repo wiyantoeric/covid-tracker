@@ -14,8 +14,13 @@
         <item name="android:statusBarColor">?attr/colorPrimary</item>
         <item name="android:windowLightStatusBar">true</item>
 
-        <item name="android:windowActionBar">
-        </item>
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.App.Splash" parent="Theme.SplashScreen">
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/app_logo</item>
+        <item name="android:windowSplashScreenAnimationDuration">750</item>
+        <item name="windowSplashScreenBackground">@color/dimmed_black</item>
+        <item name="postSplashScreenTheme">@style/Theme.CovidTracker</item>
     </style>
 </resources>
