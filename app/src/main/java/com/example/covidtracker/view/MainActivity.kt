@@ -1,5 +1,6 @@
 package com.example.covidtracker.view
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
@@ -11,5 +12,8 @@ class MainActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val homeIntent = Intent(this, HomeActivity::class.java)
+        startActivity(homeIntent)
     }
 }

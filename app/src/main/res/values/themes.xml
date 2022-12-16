@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.CovidTracker" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.CovidTracker" parent="Theme.MaterialComponents.DayNight">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/grey_white</item>
         <item name="colorPrimaryVariant">@color/white</item>
@@ -23,4 +23,22 @@
         <item name="windowSplashScreenBackground">@color/dimmed_black</item>
         <item name="postSplashScreenTheme">@style/Theme.CovidTracker</item>
     </style>
+
+    <style name="Theme.CovidTracker.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:titleTextColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="DrawerIconStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Theme.CovidTracker.ActionBarStyle" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:titleTextColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Theme.CovidTracker.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.CovidTracker.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>
