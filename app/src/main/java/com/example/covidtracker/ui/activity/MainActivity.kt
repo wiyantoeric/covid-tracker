@@ -1,4 +1,4 @@
-package com.example.covidtracker.view
+package com.example.covidtracker.ui.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
