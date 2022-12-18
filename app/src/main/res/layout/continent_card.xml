@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginVertical="4dp"
     android:elevation="10dp">
 
     <LinearLayout
@@ -42,11 +43,11 @@
                     android:text="CASES" />
 
                 <TextView
-                    android:id="@+id/text_cases"
+                    android:id="@+id/cases"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="DEATH" />
+                    android:text="12312" />
             </LinearLayout>
 
             <LinearLayout
@@ -63,11 +64,11 @@
                     android:text="DEATH" />
 
                 <TextView
-                    android:id="@+id/text_death"
+                    android:id="@+id/death"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="DEATH" />
+                    android:text="12312" />
             </LinearLayout>
 
             <LinearLayout
@@ -84,11 +85,11 @@
                     android:text="RECOVERED" />
 
                 <TextView
-                    android:id="@+id/text_recovered"
+                    android:id="@+id/recovered"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="DEATH" />
+                    android:text="12312" />
             </LinearLayout>
         </com.google.android.flexbox.FlexboxLayout>
     </LinearLayout>
