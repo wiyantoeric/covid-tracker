@@ -21,9 +21,26 @@
             android:id="@+id/search_bar"
             layout="@layout/search_bar" />
 
-        <Space
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="14dp" />
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Continents" />
+
+            <ImageButton
+                android:id="@+id/sort_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:src="@drawable/sort_icon" />
+        </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/continent_list"
