@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/sort_case_ascending"
+        android:icon="@drawable/arrow_up"
+        android:title="Case low to high" />
+    <item
+        android:id="@+id/sort_case_descending"
+        android:icon="@drawable/arrow_down"
+        android:title="Case high to low" />
+</menu>
