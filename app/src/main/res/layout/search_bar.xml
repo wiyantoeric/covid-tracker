@@ -11,5 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/transparent"
-        android:hint="Search country" />
+        android:hint="Search country"
+        android:imeOptions="actionSearch"
+        android:inputType="text" />
 </FrameLayout>
