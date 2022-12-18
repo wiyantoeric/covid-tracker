@@ -1,5 +1,8 @@
 package com.example.myapplication
 
+import com.example.covidtracker.data.model.Continent
+import com.example.covidtracker.data.model.Country
+import com.example.covidtracker.data.model.Global
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Call
@@ -30,6 +33,9 @@ class DiseaseApi {
     }
 
     private interface Response {
+        @GET("all")
+        fun getGlobal(): Call<Global>
+
         @GET("continents")
         fun getContinents(): Call<List<Continent>>
 
@@ -41,6 +47,22 @@ class DiseaseApi {
 
         @GET("countries/{country}")
         fun getCountry(@Path("country") country: String): Call<Country>
+    }
+
+    fun getGlobal(callback: (Global?) -> Unit) {
+        getService().getGlobal().enqueue(object : Callback<Global> {
+            override fun onResponse(
+                call: Call<Global>,
+                response: retrofit2.Response<Global>
+            ) {
+                val data = response.body()!!
+                callback(data)
+            }
+
+            override fun onFailure(call: Call<Global>, t: Throwable) {
+                callback(null)
+            }
+        })
     }
 
     fun getCountries(callback: (List<Country>?) -> Unit) {
