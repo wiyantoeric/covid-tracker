@@ -7,9 +7,11 @@ import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import android.view.inputmethod.EditorInfo
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.PopupMenu
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -17,10 +19,10 @@ import com.example.covidtracker.R
 import com.example.covidtracker.data.continents
 import com.example.covidtracker.databinding.FragmentHomeBinding
 import com.example.covidtracker.ui.activity.ContinentActivity
-import com.example.covidtracker.ui.activity.CountryActivity
 import com.example.covidtracker.ui.widget.ContinentListAdapter
-import com.example.covidtracker.ui.widget.CountryGridAdapter
-import com.example.myapplication.Continent
+import com.example.covidtracker.data.model.Continent
+import com.example.covidtracker.ui.activity.SearchActivity
+import com.example.covidtracker.ui.widget.setSearchBar
 
 class HomeFragment : Fragment() {
 
@@ -107,6 +109,13 @@ class HomeFragment : Fragment() {
                     }
                     true
                 }
+            }
+
+            val searchBar = binding.searchBar.countrySearch
+            setSearchBar(searchBar) {
+                val searchIntent = Intent(binding.root.context, SearchActivity::class.java)
+                searchIntent.putExtra(SearchActivity.keyword, searchBar.text.toString())
+                startActivity(searchIntent)
             }
         }
     }
