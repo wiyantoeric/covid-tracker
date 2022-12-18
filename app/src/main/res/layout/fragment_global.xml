@@ -24,7 +24,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Global" />
+                android:fontFamily="@font/notosans_bold"
+                android:text="Global"
+                android:textSize="18sp" />
 
             <Space
                 android:layout_width="match_parent"
@@ -68,6 +70,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:fontFamily="@font/notosans_regular"
                         android:text="Recovered" />
                 </LinearLayout>
 
@@ -77,6 +80,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:fontFamily="@font/notosans_regular"
                     android:gravity="end"
                     android:text="12312" />
             </LinearLayout>
@@ -108,6 +112,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:fontFamily="@font/notosans_regular"
                         android:text="Cases" />
                 </LinearLayout>
 
@@ -117,6 +122,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:fontFamily="@font/notosans_regular"
                     android:gravity="end"
                     android:text="12312" />
             </LinearLayout>
@@ -146,8 +152,9 @@
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:fontFamily="@font/notosans_regular"
                         android:text="Death" />
                 </LinearLayout>
 
@@ -157,6 +164,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:fontFamily="@font/notosans_regular"
                     android:gravity="end"
                     android:text="12312" />
             </LinearLayout>
@@ -198,6 +206,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:fontFamily="@font/notosans_regular"
                         android:text="Recovered" />
                 </LinearLayout>
 
@@ -207,6 +216,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:fontFamily="@font/notosans_regular"
                     android:gravity="end"
                     android:text="12312" />
             </LinearLayout>
@@ -238,6 +248,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:fontFamily="@font/notosans_regular"
                         android:text="Cases" />
                 </LinearLayout>
 
@@ -247,6 +258,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:fontFamily="@font/notosans_regular"
                     android:gravity="end"
                     android:text="12312" />
             </LinearLayout>
@@ -276,8 +288,9 @@
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:fontFamily="@font/notosans_regular"
                         android:text="Death" />
                 </LinearLayout>
 
@@ -287,10 +300,14 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:fontFamily="@font/notosans_regular"
                     android:gravity="end"
                     android:text="12312" />
             </LinearLayout>
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
         </LinearLayout>
 
     </ScrollView>
@@ -309,4 +326,5 @@
         android:indeterminate="true"
         app:indicatorColor="@color/dimmed_black"
         app:trackColor="@color/grey_white" />
+
 </FrameLayout>

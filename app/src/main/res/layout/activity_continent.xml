@@ -48,6 +48,7 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:fontFamily="@font/notosans_bold"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

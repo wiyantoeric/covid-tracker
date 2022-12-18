@@ -51,12 +51,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:fontFamily="@font/notosans_regular"
                     android:text="Showing result for " />
 
                 <TextView
                     android:id="@+id/country_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosans_medium"
                     android:text="Indonesia" />
             </LinearLayout>
 

@@ -28,6 +28,7 @@
                     android:id="@+id/country_flag"
                     android:layout_width="32dp"
                     android:layout_height="24dp"
+                    android:layout_gravity="center"
                     android:adjustViewBounds="true"
                     android:padding="4dp"
                     android:scaleType="centerCrop" />
@@ -41,6 +42,7 @@
                 android:id="@+id/country_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/notosans_regular"
                 android:text="Country"
                 android:textSize="18sp" />
         </LinearLayout>
@@ -67,6 +69,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosans_regular"
 
                     android:text="ACTIVE"
                     android:textSize="10sp" />
@@ -75,6 +78,7 @@
                     android:id="@+id/active"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosans_regular"
                     android:text="12312"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -98,6 +102,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/notosans_regular"
                         android:text="NEW"
                         android:textSize="10sp" />
 
@@ -105,6 +110,7 @@
                         android:id="@+id/new_cases"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/notosans_regular"
                         android:text="12312"
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -118,6 +124,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/notosans_regular"
                         android:text="TOTAL"
                         android:textSize="10sp" />
 
@@ -125,6 +132,7 @@
                         android:id="@+id/total"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/notosans_regular"
                         android:text="12312"
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -145,6 +153,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/notosans_regular"
                         android:text="RECOVERED"
                         android:textSize="10sp" />
 
@@ -152,6 +161,7 @@
                         android:id="@+id/recovered"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/notosans_regular"
                         android:text="12312"
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -165,6 +175,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/notosans_regular"
                         android:text="DEATH"
                         android:textSize="10sp" />
 
@@ -172,6 +183,7 @@
                         android:id="@+id/death"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/notosans_regular"
                         android:text="12312"
                         android:textSize="14sp" />
                 </LinearLayout>

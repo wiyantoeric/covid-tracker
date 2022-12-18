@@ -16,6 +16,7 @@
             android:id="@+id/continent_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/notosans_medium"
             android:text="Continent name"
             android:textSize="18sp" />
 
@@ -40,6 +41,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:fontFamily="@font/notosans_regular"
                     android:text="CASES" />
 
                 <TextView
@@ -47,6 +49,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:fontFamily="@font/notosans_regular"
                     android:text="12312" />
             </LinearLayout>
 
@@ -61,6 +64,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:fontFamily="@font/notosans_regular"
                     android:text="DEATH" />
 
                 <TextView
@@ -68,6 +72,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:fontFamily="@font/notosans_regular"
                     android:text="12312" />
             </LinearLayout>
 
@@ -82,6 +87,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:fontFamily="@font/notosans_regular"
                     android:text="RECOVERED" />
 
                 <TextView
@@ -89,6 +95,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:fontFamily="@font/notosans_regular"
                     android:text="12312" />
             </LinearLayout>
         </com.google.android.flexbox.FlexboxLayout>
