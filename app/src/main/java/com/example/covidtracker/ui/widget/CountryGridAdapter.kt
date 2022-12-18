@@ -7,8 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.covidtracker.R
-import com.example.myapplication.Continent
-import com.example.myapplication.Country
+import com.example.covidtracker.data.model.Country
 import com.squareup.picasso.Picasso
 import numberFormat
 

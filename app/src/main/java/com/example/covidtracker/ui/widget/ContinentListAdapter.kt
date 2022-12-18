@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.covidtracker.R
-import com.example.myapplication.Continent
+import com.example.covidtracker.data.model.Continent
 import numberFormat
 
 class ContinentListAdapter(private val continentList: MutableList<Continent?>) :
