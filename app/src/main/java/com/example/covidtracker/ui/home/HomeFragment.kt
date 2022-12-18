@@ -4,12 +4,16 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
+import android.widget.ImageButton
+import android.widget.PopupMenu
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.covidtracker.R
 import com.example.covidtracker.data.continents
 import com.example.covidtracker.databinding.FragmentHomeBinding
 import com.example.covidtracker.ui.activity.ContinentActivity
@@ -43,6 +47,7 @@ class HomeFragment : Fragment() {
             updateUi(_binding)
         }
 
+
 //    homeViewModel.text.observe(viewLifecycleOwner) {
 //      search.text = it
 //    }
@@ -51,8 +56,6 @@ class HomeFragment : Fragment() {
     }
 
     private fun updateUi(binding: FragmentHomeBinding?) {
-        Log.d("response1", continents.toString())
-
         binding!!.progressCircular.visibility = View.GONE
 
         if (continents.isNotEmpty()) {
@@ -76,6 +79,35 @@ class HomeFragment : Fragment() {
                 }
             })
 
+
+            val sortButton: ImageButton = binding.sortButton
+
+            sortButton.setOnClickListener {
+                val popup = PopupMenu(binding.root.context, it)
+                popup.inflate(R.menu.sort_menu)
+                popup.setForceShowIcon(true)
+                popup.show()
+
+                popup.setOnMenuItemClickListener { item: MenuItem? ->
+                    when (item?.itemId) {
+                        R.id.sort_case_ascending -> {
+                            continents.sortBy { continent: Continent? ->
+                                continent?.cases
+                            }
+
+                            continentListAdapter.notifyDataSetChanged()
+                        }
+                        R.id.sort_case_descending -> {
+                            continents.sortByDescending { continent: Continent? ->
+                                continent?.cases
+                            }
+
+                            continentListAdapter.notifyDataSetChanged()
+                        }
+                    }
+                    true
+                }
+            }
         }
     }
 
