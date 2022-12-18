@@ -10,6 +10,7 @@ import com.example.covidtracker.R
 import com.example.myapplication.Continent
 import com.example.myapplication.Country
 import com.squareup.picasso.Picasso
+import numberFormat
 
 class CountryGridAdapter(private val countryList: MutableList<Country?>) :
     RecyclerView.Adapter<CountryGridAdapter.GridViewHolder>() {
@@ -30,15 +31,15 @@ class CountryGridAdapter(private val countryList: MutableList<Country?>) :
         val noInfo = "No info"
 
         Picasso.get().load(country!!.countryInfo!!.flag).into(holder.countryFlag)
-        holder.countryName.text = (if (country.country != null) country.active.toString() else noInfo)
+        holder.countryName.text = (country.country ?: noInfo)
 
-        holder.active.text = (if (country.active != null) country.active.toString() else noInfo)
+        holder.active.text = (if (country.active != null) numberFormat(country.active) else noInfo)
         holder.newCases.text =
-            (if (country.todayCases != null) country.todayCases.toString() else noInfo)
-        holder.death.text = (if (country.deaths != null) country.deaths.toString() else noInfo)
-        holder.total.text = (if (country.cases != null) country.cases.toString() else noInfo)
+            (if (country.todayCases != null) numberFormat(country.todayCases) else noInfo)
+        holder.death.text = (if (country.deaths != null) numberFormat(country.deaths) else noInfo)
+        holder.total.text = (if (country.cases != null) numberFormat(country.cases) else noInfo)
         holder.recovered.text =
-            (if (country.recovered != null) country.recovered.toString() else noInfo)
+            (if (country.recovered != null) numberFormat(country.recovered) else noInfo)
 
 //        holder.itemView.setOnClickListener {
 //            onItemClickCallback.onItemClicked(countryList[position])

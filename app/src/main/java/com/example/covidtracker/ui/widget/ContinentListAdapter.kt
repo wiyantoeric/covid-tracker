@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.covidtracker.R
 import com.example.myapplication.Continent
+import numberFormat
 
 class ContinentListAdapter(private val continentList: MutableList<Continent?>) :
     RecyclerView.Adapter<ContinentListAdapter.ListViewHolder>() {
@@ -34,10 +35,10 @@ class ContinentListAdapter(private val continentList: MutableList<Continent?>) :
 
         holder.continentName.text = continent!!.continent
 
-        holder.cases.text = if (continent.cases != null) continent.cases.toString() else noInfo
+        holder.cases.text = if (continent.cases != null) numberFormat(continent.cases) else noInfo
         holder.recovered.text =
-            if (continent.recovered != null) continent.recovered.toString() else noInfo
-        holder.death.text = if (continent.deaths != null) continent.deaths.toString() else noInfo
+            if (continent.recovered != null) numberFormat(continent.recovered) else noInfo
+        holder.death.text = if (continent.deaths != null) numberFormat(continent.deaths) else noInfo
 
         holder.itemView.setOnClickListener {
             onItemClickCallback.onItemClicked(continentList[position]!!)
