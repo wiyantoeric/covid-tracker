@@ -1,4 +1,4 @@
-package com.example.covidtracker.data.model
+package com.example.covidtracker.data
 
 import com.example.myapplication.Continent
 
