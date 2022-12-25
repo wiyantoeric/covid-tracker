@@ -1,2 +1,2 @@
 # Covid Tracker App
-Android Covid disease tracker application, implements [Covid disease open data]( www.disease.sh).
+Android Covid disease tracker application, implements www.disease.sh.
