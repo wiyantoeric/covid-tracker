@@ -1,2 +1,2 @@
 # Covid Tracker App
-Android Covid disease tracker application, implements www.disease.sh.
+Application of disease.sh covid case API on Android (Kotlin)
